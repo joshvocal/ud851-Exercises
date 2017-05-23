@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             makeGithubSearchQuery();
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
