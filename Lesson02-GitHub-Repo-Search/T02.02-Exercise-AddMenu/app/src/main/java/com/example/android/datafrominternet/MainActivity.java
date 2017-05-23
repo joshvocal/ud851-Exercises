@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Handled Menu Click!", Toast.LENGTH_SHORT).show();
                 return true;
         }
-       
+
         return super.onOptionsItemSelected(item);
     }
 }
