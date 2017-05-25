@@ -35,7 +35,7 @@
         android:title="@string/pref_color_label" />
 
     <EditTextPreference
-        android:defaultValue="@string/pref_size/default"
+        android:defaultValue="@string/pref_size_default"
         app:key="@string/pref_size_key"
         android:title="@string/pref_size_label"
         />
