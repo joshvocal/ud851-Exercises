@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
             // the screen with the first word and setting any other instance variables
             mDefCol = mData.getColumnIndex(DroidTermsExampleContract.COLUMN_DEFINITION);
             mWordCol = mData.getColumnIndex(DroidTermsExampleContract.COLUMN_WORD);
+            nextWord();
         }
     }
 
