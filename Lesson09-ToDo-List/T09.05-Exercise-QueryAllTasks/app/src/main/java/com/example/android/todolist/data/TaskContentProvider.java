@@ -139,9 +139,24 @@ public class TaskContentProvider extends ContentProvider {
                         null,
                         sortOrder);
                 break;
+
+            case TASK_WITH_ID:
+                String id = uri.getPathSegments().get(1);
+                String mSelection = "_id=?";
+                String[] mSelectionArgs = new String[]{id};
+
+                returnCursor = db.query(TABLE_NAME,
+                        projection,
+                        selection,
+                        selectionArgs,
+                        null,
+                        null,
+                        sortOrder);
+                break;
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
+
 
         // TODO (4) Set a notification URI on the Cursor and return that Cursor
         returnCursor.setNotificationUri(getContext().getContentResolver(), uri);
